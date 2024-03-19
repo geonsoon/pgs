@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'WAGURITTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(255, 217, 236);
+}
+
+
+table {
+  table-layout: fixed;
+  border: solid 4px palevioletred;
+  border-radius: 10px;
+}
+
+h2 {
+  color: hotpink;
+  font-family: 'WAGURITTF';
+  font-weight: normal;
+  font-style: normal;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+td {
+  text-align: center;
+  border: solid 1px violet;
+  border-radius: 3px;
+}
+
+.image-container {
+  width: 200px; /* 컨테이너의 고정 너비 */
+  height: 200px; /* 컨테이너의 고정 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* 컨테이너를 벗어나는 이미지는 잘림 */
+}
+
+.result-image {
+  max-width: 100%; /* 컨테이너 너비를 초과하지 않도록 설정 */
+  max-height: 100%; /* 컨테이너 높이를 초과하지 않도록 설정 */
+}
+
+.drawButton {
+  margin-bottom: 10px;
+  color: palevioletred;
+  font-family: 'WAGURITTF';
+  font-weight: normal;
+  font-style: normal;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.retry{
+  background:whitesmoke;
+  color:palevioletred;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'WAGURITTF';
+  font-weight: normal;
+  font-style: normal;
+}
+button:hover{
+  background:#fff;
+  color:hotpink;
+}
+
+.retry:before, .retry:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: hotpink;
+  transition:400ms ease all;
+}
+
+.retry:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+.retry:hover:before,.retry:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
