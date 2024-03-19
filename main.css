@@ -1,9 +1,9 @@
-@font-face {
+@font-face { 
   font-family: 'WAGURITTF';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
+} /* 폰트 적용 */
 
 body {
   background-color: rgb(255, 217, 236);
